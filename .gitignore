@@ -1,0 +1,60 @@
+# Composer
+/vendor/
+composer.phar
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and runtime
+*.log
+logs/
+tmp/
+cache/
+
+# Session files
+sessions/
+*.session
+
+# Upload directories
+uploads/
+files/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node modules (if using npm)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# PHP specific
+.php_cs.cache
+.phpunit.result.cache
