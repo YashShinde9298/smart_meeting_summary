@@ -96,7 +96,6 @@
                     </div>
  
                     <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Agenda Section -->
                         <div class="editable-section border rounded-lg p-4" data-section="agenda">
                             <div class="flex justify-between items-center mb-3">
                                 <h3 class="text-lg font-semibold text-gray-700">
@@ -111,7 +110,6 @@
                             <div id="agendaContent" class="space-y-2"></div>
                         </div>
  
-                        <!-- Key Decisions Section -->
                         <div class="editable-section border rounded-lg p-4" data-section="key_decisions">
                             <div class="flex justify-between items-center mb-3">
                                 <h3 class="text-lg font-semibold text-gray-700">
@@ -126,7 +124,6 @@
                             <div id="keyDecisionsContent" class="space-y-3"></div>
                         </div>
  
-                        <!-- Action Items Section -->
                         <div class="editable-section border rounded-lg p-4" data-section="action_items">
                             <div class="flex justify-between items-center mb-3">
                                 <h3 class="text-lg font-semibold text-gray-700">
@@ -143,7 +140,6 @@
                     </div>
                 </div>
  
-                <!-- Export Options -->
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4">
                         <i class="fas fa-download text-gray-600 mr-2"></i>
@@ -284,7 +280,6 @@
             return div.innerHTML;
         }
  
-        // Regenerate section buttons
         document.querySelectorAll('.regenerate-section-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const section = this.dataset.section;
@@ -292,12 +287,10 @@
             });
         });
  
-        // Regenerate all button
         document.getElementById('regenerateAllBtn').addEventListener('click', function() {
             generateSummary();
         });
  
-        // Export buttons
         document.getElementById('exportJsonBtn').addEventListener('click', function() {
             if (!currentSummary) return;
  

@@ -52,11 +52,9 @@ class AiService {
     }
  
     private function parseResponse($response, $section = null) {
-        // Clean the response
         $response = trim($response);
  
         if ($section) {
-            // For individual sections, expect a JSON array
             $jsonStart = strpos($response, '[');
             $jsonEnd = strrpos($response, ']');
  
@@ -69,7 +67,6 @@ class AiService {
                 }
             }
         } else {
-            // For full summary, expect a JSON object
             $jsonStart = strpos($response, '{');
             $jsonEnd = strrpos($response, '}');
  

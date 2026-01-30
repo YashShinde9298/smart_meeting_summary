@@ -1,6 +1,5 @@
 <?php
 
-// Load environment variables from .env file
 if (!function_exists('loadEnv')) {
     function loadEnv($path) {
     if (!file_exists($path)) {
